@@ -1,0 +1,18 @@
+{% extends 'index.html' %}
+
+{% block body_block %}
+    
+    <form action="" method="get">
+        {% csrf_token %}
+        <table>
+            {{form.as_table}}
+        </table>
+        <button>Buscar</button>
+    </form>
+
+    {% for lector in lectores%} 
+        <li>{{lector}}</li>
+    
+    {% endfor %}
+
+{% endblock body_block %}

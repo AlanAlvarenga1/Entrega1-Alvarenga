@@ -1,0 +1,70 @@
+{% extends 'index.html' %}
+
+{% block body_block %}
+    <!-- Page header with logo and tagline-->
+    <header class="py-5 bg-light border-bottom mb-4">
+        <div class="container">
+            <div class="text-center my-5">
+                <h1 class="fw-bolder">Bienvenid@ a Instablog</h1>
+            </div>
+        </div>
+    </header>
+    <!-- Page content-->
+    <div class="container">
+        <div class="row">
+            <!-- Blog entries-->
+            <div class="col-lg-8">
+                <!-- Featured blog post-->
+                <div class="card mb-4">
+                    <a href="#!"><img class="card-img-top" src="https://concepto.de/wp-content/uploads/2015/03/paisaje-e1549600034372.jpg" alt="..." /></a>
+                    <div class="card-body">
+                        <div class="small text-muted">21 de Marzo, 2022</div>
+                        <h2 class="card-title">Los mejores paisajes del mundo</h2>
+                        <p class="card-text">No podras creer la cantidad de paises que hay en este ranking</p>
+                        <a class="btn btn-primary" href="#!">Haga click para ingresar</a>
+                    </div>
+                </div>
+                <!-- Nested row for non-featured blog posts-->
+                <div class="row">
+                    <div class="col-lg-6">
+                    </div>
+                </div>
+            </div>
+            <!-- Side widgets-->
+            <div class="col-lg-4">
+                <!-- Search widget-->
+                <div class="card mb-4">
+                    <div class="card-header">Search</div>
+                    <div class="card-body">
+                        <div class="input-group">
+                            <input class="form-control" type="text" placeholder="Enter search term..." aria-label="Enter search term..." aria-describedby="button-search" />
+                            <button class="btn btn-primary" id="button-search" type="button">Go!</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Categories widget-->
+                <div class="card mb-4">
+                    <div class="card-header">Categories</div>
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <ul class="list-unstyled mb-0">
+                                    <li><a href="#!">Diseño web</a></li>
+                                    <li><a href="#!">Paisajes</a></li>
+                                    <li><a href="#!">Tiendas</a></li>
+                                </ul>
+                            </div>
+                            <div class="col-sm-6">
+                                <ul class="list-unstyled mb-0">
+                                    <li><a href="#!">Videos</a></li>
+                                    <li><a href="#!">Historias</a></li>
+                                    <li><a href="#!">Tutoriales</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock body_block %}

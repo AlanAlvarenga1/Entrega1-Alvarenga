@@ -1,0 +1,13 @@
+{% extends 'index.html' %}
+
+{% block body_block %}
+    <div class="text-center my-5">
+        <h1 class="fw-bolder">¿Que deseas hacer?</h1>
+
+        <!-- Botones y redireccionamiento-->
+        <a class="btn btn-primary" href={% url 'registro' %}>Registrar</a> 
+        <a class="btn btn-primary" href={% url 'busqueda' %}>Buscar</a>
+    </div>
+
+ 
+{% endblock body_block %}
